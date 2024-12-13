@@ -49,12 +49,12 @@ const PwaInstallGuideContent = ({
 
       return [
         <>
-          Bấm nút {wrapperIcon(<IIosSafariSharingApiButton2 />)} tại thanh công
-          cụ.
+          Press the button {wrapperIcon(<IIosSafariSharingApiButton2 />)} at the
+          toolbar.
         </>,
         <>
-          Chọn {wrapperIcon(<IIosSafariAddToHomeScreenButton2 />)} từ menu đã
-          hiển thị. Bạn có thể cần phải cuộn xuống để tìm mục này.
+          Choose {wrapperIcon(<IIosSafariAddToHomeScreenButton2 />)} from the
+          displayed menu. You may need to scroll down to find this item.
         </>,
       ];
     } else if (isBrowserIOSChrome()) {
@@ -62,35 +62,35 @@ const PwaInstallGuideContent = ({
 
       return [
         <>
-          Bấm nút {wrapperIcon(<IIosSafariSharingApiButton2 />)} tại góc phía
-          trên bên phải.
+          Press the button {wrapperIcon(<IIosSafariSharingApiButton2 />)} in the
+          upper right corner.
         </>,
         <>
-          Chọn {wrapperIcon(<IIosSafariAddToHomeScreenButton2 />)} từ menu đã
-          hiển thị. Bạn có thể cần phải cuộn xuống để tìm mục này.
+          Choose {wrapperIcon(<IIosSafariAddToHomeScreenButton2 />)} from the
+          displayed menu. You may need to scroll down to find this item.
         </>,
       ];
     } else if (isBrowserIOSInAppFacebook() || isBrowserIOSInAppLinkedin()) {
       // console.log("isBrowserIOSInAppFacebook");
       return [
-        <>Bấm nút {wrapperIcon(<IGenericMoreButton />)} phía dưới.</>,
-        <>Mở trong trình duyệt.</>,
+        <>Press the button {wrapperIcon(<IGenericMoreButton />)} below.</>,
+        <>Open in browser.</>,
       ];
     } else if (isBrowserIOSInAppInstagram()) {
       // console.log("isBrowserIOSInAppInstagram");
       return [
-        <>Bấm nút {wrapperIcon(<IUpload />)} phía dưới.</>,
+        <>Press the button {wrapperIcon(<IUpload />)} below.</>,
         <>
-          Chọn {wrapperIcon(<IOpeninsafariButton />)} từ menu đã hiển thị. Bạn
-          có thể cần phải cuộn xuống để tìm mục này.
+          Choose {wrapperIcon(<IOpeninsafariButton />)} from the displayed menu.
+          You may need to scroll down to find this item.
         </>,
       ];
     } else if (isBrowserIOSInAppThreads() || isBrowserIOSInAppTwitter()) {
       // console.log("isBrowserIOSInAppThreads");
       return [
         <>
-          Bấm nút {wrapperIcon(<IOpeninsafariButton />)} phía dưới để mở trình
-          duyệt từ hệ thống.
+          Press the button {wrapperIcon(<IOpeninsafariButton />)} below to open
+          the browser from the system.
         </>,
       ];
     } else {
@@ -115,8 +115,8 @@ const PwaInstallGuideContent = ({
     } else if (isBrowserAndroidFacebook()) {
       // console.log("isBrowserAndroidFacebook");
       return [
-        <>Bấm nút {wrapperIcon(<IGenericMoreButton2 />)} phía trên.</>,
-        <>Mở trong trình duyệt.</>,
+        <>Press the button {wrapperIcon(<IGenericMoreButton2 />)} above.</>,
+        <>Open in browser.</>,
       ];
     } else {
       // console.log("else");
@@ -131,9 +131,9 @@ const PwaInstallGuideContent = ({
       // console.log("isDesktopSafari");
       return [
         <>
-          Bấm {wrapperIcon(<IIosSafariSharingApiButton2 />)} tại thanh công cụ.
+          Press {wrapperIcon(<IIosSafariSharingApiButton2 />)} at the toolbar.
         </>,
-        <>Chọn {wrapperIcon(<IDesktopSafariDock />)} Thêm vào Dock</>,
+        <>Choose {wrapperIcon(<IDesktopSafariDock />)} Add to Dock</>,
       ];
     }
   }
