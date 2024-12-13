@@ -7,6 +7,8 @@
 1. **Complete Component**: Includes pre-built UI and installation logic.
 2. **Hook**: Provides state and data to customize the installation UI as needed.
 
+![desktop_chrome](./public/display.png)
+
 ---
 
 ## Installation

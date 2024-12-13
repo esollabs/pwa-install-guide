@@ -1,6 +1,6 @@
 {
   "name": "@frontend/pwa-install-guide",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "description": "A simple guide to add PWA installation functionality with customizable UI or hooks.",

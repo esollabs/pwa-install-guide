@@ -131,8 +131,7 @@ const PwaInstallGuideContent = ({
       // console.log("isDesktopSafari");
       return [
         <>
-          Bấm {wrapperIcon(<IIosSafariSharingApiButton2 />)}
-          tại thanh công cụ.
+          Bấm {wrapperIcon(<IIosSafariSharingApiButton2 />)} tại thanh công cụ.
         </>,
         <>Chọn {wrapperIcon(<IDesktopSafariDock />)} Thêm vào Dock</>,
       ];
