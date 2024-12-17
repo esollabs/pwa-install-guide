@@ -7,7 +7,8 @@
 1. **Complete Component**: Includes pre-built UI and installation logic.
 2. **Hook**: Provides state and data to customize the installation UI as needed.
 
-![desktop_chrome](./public/display.png)
+![desktop_chrome](https://raw.githubusercontent.com/esollabs/pwa-install-guide/refs/heads/dev/public/desktop_chrome.png)
+![display](https://raw.githubusercontent.com/esollabs/pwa-install-guide/refs/heads/dev/public/display.png)
 
 ---
 
@@ -32,8 +33,8 @@ yarn add pwa-install-guide
 Use the pre-built component that comes with ready-to-use UI and logic. Ideal for quick integration of PWA installation functionality.
 
 ```tsx
-import { InstallPWAGuideModal } from '@frontend/pwa-install-guide';
-import '@frontend/pwa-install-guide/dist/style.css'
+import { InstallPWAGuideModal } from 'pwa-install-guide';
+import 'pwa-install-guide/dist/style.css'
 
 
 function App() {
@@ -58,7 +59,7 @@ function App() {
 The hook provides state and functions for you to create a custom installation UI.
 
 ```tsx
-import { useInstallPWAGuide } from '@frontend/pwa-install-guide';
+import { useInstallPWAGuide } from 'pwa-install-guide';
 
 function CustomInstallFlow() {
   const { showPrompt, loading, steps, isOpen, onClose } = useInstallPWAGuide({

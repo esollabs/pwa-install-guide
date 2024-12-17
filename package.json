@@ -1,5 +1,5 @@
 {
-  "name": "@frontend/pwa-install-guide",
+  "name": "pwa-install-guide",
   "version": "1.0.0",
   "private": false,
   "type": "module",

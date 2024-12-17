@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "index.ts"),
-      name: "@frontend/pwa-install-guide",
+      name: "pwa-install-guide",
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
