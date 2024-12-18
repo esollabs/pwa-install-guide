@@ -1,7 +1,7 @@
 import PwaInstallGuideContent from "@/components/pwa-install-guide/pwa-install-guide-content";
 import { animateModal } from "@/utils/animation";
 import { wait } from "@/utils/common";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { JSX, useEffect, useMemo, useRef, useState } from "react";
 
 const useInstallPWAGuide = (props?: {
   iconWrapper?: ({ children }: { children: JSX.Element }) => JSX.Element;

@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { JSX, useMemo } from "react";
 import BottomModal from "../base-modal/bottom-modal";
 import ZoomModal from "../base-modal/zoom-modal";
 import useInstallPWAGuide from "@/hooks/useInstallPWAGuide";

@@ -25,6 +25,7 @@ import {
 } from "../icon/install-icon";
 import { getPWADisplayMode } from "@/utils/common";
 import DefaultWrapperIcon from "../icon/defaut-wrapper-icon";
+import { JSX } from "react";
 
 const PwaInstallGuideContent = ({
   iconWrapper = DefaultWrapperIcon,
