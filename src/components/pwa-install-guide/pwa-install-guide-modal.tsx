@@ -20,9 +20,11 @@ const InstallPWAGuideModal = ({
     () => (
       <>
         {props.header ?? (
-          <p className="pt-2 text-center font-semibold">Install PWA Guide</p>
+          <p className="pt-2 text-center font-semibold text-black">
+            Install PWA Guide
+          </p>
         )}
-        <div className="flex w-full flex-col gap-2 p-4">
+        <div className="flex w-full flex-col gap-2 p-4 text-black">
           {steps ? (
             <>
               {steps.map((item, index) => (
