@@ -28,6 +28,9 @@ const useInstallPWAGuide = (props?: {
   };
 
   useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
     if (!!content) {
       setIsOpen(true);
       async function play() {
@@ -49,6 +52,12 @@ const useInstallPWAGuide = (props?: {
 
   async function showPrompt() {
     try {
+      if (typeof window === "undefined" || typeof document === "undefined") {
+        throw new Error(
+          "Function showPromt() can only be executed on the client side.",
+        );
+      }
+
       if (typeof content !== "boolean") {
         throw new Error(
           "Show prompt not supported! Please display guide content by steps.",

@@ -43,6 +43,10 @@ const PwaInstallGuideContent = ({
     return false;
   }
 
+  if (typeof window === "undefined") {
+    return false;
+  }
+
   if (isDeviceIOS()) {
     // IOS
     if (isBrowserIOSSafari()) {

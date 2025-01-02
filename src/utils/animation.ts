@@ -1,4 +1,7 @@
 export function animateModal(id: string, isOpen: boolean) {
+  if (typeof document === "undefined") {
+    return false;
+  }
   const stack: HTMLElement[] = [];
   const element = document.getElementById(id);
   if (element) {
