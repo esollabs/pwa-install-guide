@@ -1,4 +1,5 @@
-const userAgent = window.navigator.userAgent;
+const userAgent =
+  typeof window == "undefined" ? "" : window.navigator.userAgent;
 
 export function _matchesUserAgent(regex: RegExp): boolean {
   return !!userAgent.match(regex);
@@ -64,7 +65,8 @@ export function isBrowserIOSInAppInstagram() {
 
   // TODO: this is incompatible with Instagram/Threads mobile website links.
   // TODO: this solution only works with first-level links
-  if (window.document.referrer.match("//l.instagram.com/")) {
+  const referrer = typeof window == "undefined" ? "" : window.document.referrer;
+  if (referrer.match("//l.instagram.com/")) {
     return true;
   }
 
@@ -82,7 +84,8 @@ export function isBrowserIOSInAppTwitter() {
 
   // TODO: this solution is incompatible with Twitter mobile website links
   // TODO: this solution only works with first-level links
-  return !!window.document.referrer.match("//t.co/");
+  const referrer = typeof window == "undefined" ? "" : window.document.referrer;
+  return !!referrer.match("//t.co/");
 }
 
 export function isBrowserAndroidChrome() {

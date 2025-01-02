@@ -1,6 +1,6 @@
 {
   "name": "pwa-install-guide",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "private": false,
   "type": "module",
   "description": "A simple guide to add PWA installation functionality with customizable UI or hooks.",
