@@ -1,4 +1,6 @@
 export function getPWADisplayMode() {
+  if (typeof window === "undefined" || typeof document === "undefined")
+    return "unknown";
   if (document.referrer.startsWith("android-app://")) return "twa";
   if (window.matchMedia("(display-mode: browser)").matches) return "browser";
   if (window.matchMedia("(display-mode: standalone)").matches)
